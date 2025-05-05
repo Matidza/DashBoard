@@ -2,6 +2,13 @@ Sure! Here are **10 logo style suggestions** for **Vyuzes.com**, considering a m
 
 ---
 
+<a href="{% if not school.website.startswith('http') %}https://{{ school.website }}{% else %}{{ school.website }}{% endif %}" 
+   class="text-primary" 
+   target="_blank" 
+   rel="noopener noreferrer">
+   {{ school.website }}
+</a>
+
 ### 🔹 **1. Text + Dot Identity**
 
 * **Text:** `Vyuzes`
