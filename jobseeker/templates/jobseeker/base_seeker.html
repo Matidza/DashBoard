@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="{% static 'seeker/css/aos.css' %}">
     <link rel="stylesheet" href="{% static 'seeker/css/jquery.fancybox.min.css' %}">
     <link rel="stylesheet" href="{% static 'seeker/css/style.css' %}">
+     <!-- Add Bootstrap CSS in <head> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    -->
+    <!-- Font Awesome for icons 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    -->
 
     <style>
       /* 🧷 Make navbar fixed */
@@ -53,7 +59,9 @@
                 </h1>
               </div>
               <div class="col-6 col-md-8">
-                <nav class="site-navigation text-right" role="navigation">
+
+
+		<nav class="site-navigation text-right" role="navigation">
                   <div class="container">
                     <div class="d-inline-block d-lg-block ml-md-0 mr-auto py-3">
                       <a href="#" class="site-menu-toggle js-menu-toggle text-black">
@@ -71,6 +79,51 @@
                     </ul>
                   </div>
                 </nav>
+
+
+
+		<!-- 
+		<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-3">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+    
+    <a class="navbar-brand d-flex align-items-center" href="{% url 'seeker:homepage' %}">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="logo" width="30" height="30">
+    </a>
+
+    
+    <form class="d-none d-md-flex mx-3 flex-grow-1">
+      <input class="form-control rounded-pill" type="search" placeholder="Search" aria-label="Search">
+    </form>
+
+
+    <ul class="navbar-nav d-flex flex-row align-items-center gap-3 ms-auto">
+      <li class="nav-item text-center">
+        <a class="nav-link text-dark" href="#"><i class="fas fa-home"></i><br><small>Home</small></a>
+      </li>
+      <li class="nav-item text-center position-relative">
+        <a class="nav-link text-dark" href="#"><i class="fas fa-user-friends"></i><br><small>Network</small></a>
+        <span class="badge bg-danger position-absolute top-0 start-100 translate-middle p-1">1</span>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link text-dark" href="#"><i class="fas fa-briefcase"></i><br><small>Jobs</small></a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link text-dark" href="#"><i class="fas fa-comment-dots"></i><br><small>Messaging</small></a>
+      </li>
+      <li class="nav-item text-center position-relative">
+        <a class="nav-link text-dark" href="#"><i class="fas fa-bell"></i><br><small>Notifications</small></a>
+        <span class="badge bg-danger position-absolute top-0 start-100 translate-middle p-1">14</span>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link" href="#"><img src="your-profile.jpg" class="rounded-circle" width="24" height="24"><br><small>Me</small></a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link text-dark" href="#"><i class="fas fa-th"></i><br><small>Work</small></a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
               </div>
             </div>
           </div>

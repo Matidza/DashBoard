@@ -1,7 +1,8 @@
 {% extends 'jobseeker/base_seeker.html' %}
 {% load static %}
 {% block content %}
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+ 
   <style>
     .truncate-text {
       display: -webkit-box;
@@ -17,6 +18,10 @@
     .seeker-name {
       font-weight: 600;
       font-size: x-large;
+    }
+    .name {
+      font-weight: 400;
+      font-size: medium;
     }
   </style>
 
@@ -34,7 +39,8 @@
             </div>
             <ul class="list-group list-group-flush text-black bg-white">
               <li class="list-group-item ">Interviews: &nbsp;<span class="text-primary">2</span></li>
-              <li class="list-group-item ">Admission: &nbsp;&nbsp;&nbsp;<span class="icon-book"></span></li>
+
+              <li class="list-group-item ">Resume/CV: &nbsp;&nbsp;&nbsp; <i class="bi bi-file-person"></i>  </li>
             </ul>  
           </div>
           <div class="card mb-3" style="background-color: rgb(233, 233, 233);">
@@ -61,7 +67,6 @@
           </div>
 
 
-          
 
           <div class="card mb-3 bg-white">
             <div class="card-header bg-white" >
@@ -69,10 +74,10 @@
               &nbsp; <strong class="text-black professional-name">Alex Smith</strong>
               <span class="text-muted small float-right">3h ago</span>
             </div>
-
+		
             <div class="card-body text-black">
-              <p><b>Position:&nbsp;&nbsp;Software Engineer</b></p>
-	      <p style="margin-top: -18px;"><b>Level:&nbsp;&nbsp; Entry-Level</b></p>
+              <p class="name"><b>Position:&nbsp;&nbsp;Software Engineer</b></p>
+	      <p class="name" style="margin-top: -18px;"><b>Level:&nbsp;&nbsp; Entry-Level</b></p>
               <p class="truncate-text">
                 We’re now looking for passionate, driven, and 
 		curious individuals to join our growing engineering team.
@@ -126,8 +131,8 @@
               <span class="text-muted small float-right">3h ago</span>
             </div>
             <div class="card-body text-black" >
-              <p><b>Position:&nbsp;&nbsp; Project Manager – Construction</b></p>
-	      <p style="margin-top: -18px;"><b>Level:&nbsp;&nbsp; Mid-Senior Level</b></p>
+              <p class="name"><b>Position:&nbsp;&nbsp; Project Manager – Construction</b></p>
+	      <p class="name" style="margin-top: -18px;"><b>Level:&nbsp;&nbsp; Mid-Senior Level</b></p>
               <p class="truncate-text">
                 We are currently looking for an experienced Project Manager to 
 		lead construction initiatives and drive project success from concept to 
@@ -166,16 +171,12 @@
               <span class="text-muted small float-right">3h ago</span>
             </div>
             <div class="card-body text-black" >
-              <p><b>Position:&nbsp;&nbsp; Store Manager</b></p>
-	      <p style="margin-top: -18px;"><b>Level:&nbsp;&nbsp; Mid-Level</b></p>
+              <p class="name"><b>Position:&nbsp;&nbsp; Store Manager</b></p>
+	      <p class="name" style="margin-top: -18px;"><b>Level:&nbsp;&nbsp; Mid-Level</b></p>
               <p class="truncate-text">
                 We’re currently seeking a dedicated and experienced Store Manager 
-	        to lead our Durban branch.
-Key Responsibilities
-
-    Oversee daily store operations and team management
-
-    Drive sales and meet/exceed monthly revenue targets
+	        to lead our Durban branch.Key Responsibilities
+Oversee daily store operations and team managementDrive sales and meet/exceed monthly revenue targets
 
     Maintain high standards of customer service
 
@@ -206,7 +207,7 @@ Key Responsibilities
         <!-- Right Sidebar -->
         <div class="col-md-3 d-none d-md-block text-black" >
           <div class="card mb-3 " style="background-color: rgb(233, 233, 233);">
-            <div class="card-header bg-white" >
+            <div class="card-header bg-white name" >
               <strong class="text-black" >CV tips: </strong>
             </div>
             <ul class="list-group list-group-flush">
@@ -216,7 +217,7 @@ Key Responsibilities
             </ul>
           </div>
           <div class="card" style="background-color: rgb(233, 233, 233);">
-            <div class="card-header bg-white">
+            <div class="card-header bg-white name">
               <strong class="text-black">Real Applications</strong>
             </div>
             <ul class="list-group list-group-flush bg-white">
